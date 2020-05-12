@@ -3,6 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+//custom Angular Materials import module - kitchen sink
+import { MaterialSinkModule } from './material-sink/material-sink.module';
+
+//allow jquery typing
+import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
@@ -10,7 +17,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialSinkModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
